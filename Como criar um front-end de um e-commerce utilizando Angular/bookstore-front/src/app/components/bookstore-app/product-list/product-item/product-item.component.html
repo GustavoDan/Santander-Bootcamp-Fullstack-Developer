@@ -1,0 +1,25 @@
+<div class="card shadow-sm">
+    <img
+        class="bd-placeholder-img card-img-top"
+        width="100%"
+        [src]="book.img"
+    />
+
+    <div class="card-body">
+        <p class="card-text text-primary fw-bold mb-0">{{ book.name }}</p>
+        <p class="card-text text-secondary fw-light m-0">
+            <small>{{ book.genre }}</small>
+        </p>
+        <p class="card-text text-secondary fw-light m-0">
+            <small>Quantidade: {{ book.quantity }}</small>
+        </p>
+        <p class="card-text text-success fw-bold mt-1 mb-2">
+            {{ book.price | currency: "BRL" }}
+        </p>
+
+        <div class="btn-group">
+            <button class="btn btn-sm btn-primary">Comprar</button>
+            <button class="btn btn-sm btn-secondary">Detalhes</button>
+        </div>
+    </div>
+</div>
